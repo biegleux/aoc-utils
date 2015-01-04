@@ -1,0 +1,50 @@
+INFORMATION:
+------------
+
+	revealfix tool fixes initial map revealing in aoe2 recorded games with reveal map set to explored
+
+	copyright (c) 2009-2013 biegleux <biegleux[at]gmail[dot]com>
+
+	latest release: revealfix v1.2 2009/12/15
+
+	you can find the latest release at http://sourceforge.net/projects/aoc-mgx-utils/
+
+	Overview
+	--------
+	
+	Symptoms:
+	AOC game recorded with explored reveal map setting is replaying as "All Visible" (in rec's owner POV) or "Normal" in other player's POV.
+
+	Solution:
+	revealfix tool tries to fix this symptom by rewritting reveal map data in body section of the recorded game.
+
+	Note
+	----
+
+	This tool is provided "as is" without any warranty. Please backup your files before processing.
+
+LICENSE:
+--------
+
+	For license information read COPYING.
+
+VERSION CHANGES:
+----------------
+1.2 - 15. 12. 2009
+  - Preserves the original date and time that a file was created, last accessed, and last modified.
+
+1.1 - 14. 12. 2009
+  - Added support for mgl files, scenarios and AOC 1.0 version.
+
+1.0 - 03. 07. 2009
+  - Initial public release
+
+NOTES ON SOURCE CODE:
+---------------------
+To use with Lazarus (Free Pascal Compiler):
+- Rename revealfix.dpr to revealfix.pas
+- Launch Lazarus and open this file.
+- Lazarus will ask you to create a new project from this file, click "Yes" and pick "Custom Program" from the offered options.
+
+Used Third-Party Code:
+delphi zlib <http://www.base2ti.com/zlib.htm>

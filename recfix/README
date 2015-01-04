@@ -1,0 +1,47 @@
+INFORMATION:
+------------
+
+	recfix (formerly mgxfix) tool fixes some aoe2 recorded games with invalid header length
+
+	Copyright (c) 2009-2013 biegleux <biegleux[at]gmail[dot]com>
+
+	latest release: recfix v0.5 2013/03/24
+
+	you can find the latest release at http://sourceforge.net/projects/aoc-mgx-utils/
+
+	Overview
+	--------
+	
+	Symptoms:
+	First four bytes in the file are zeroed (header length information).
+	When trying to view such file the game popups the "Cannot load that old recorded game" dialog.
+
+	Cause:
+	Sometimes it is not properly saved aoe2 recorded game when it is played at GameSpy or GameRanger.
+	Client manipulates the recorded game file or the game alone somehow and it leads to inability of viewing this file.
+		
+	Solution:
+	recfix tool tries to find the proper length of the header in order to properly view recorded game.
+	
+LICENSE:
+--------
+
+	For license information read COPYING.
+
+VERSION CHANGES:
+----------------
+
+0.5 - 24. 03. 2013
+  - New header length search approach.
+
+0.4 - 09. 11. 2010
+  - Header length limit extended, length may be greater than 1MB.
+
+0.3 - 20. 05. 2010
+  - Preserves the original date and time that a file was created.
+
+0.2 - 18. 08. 2009
+  - Added support for mgl files
+
+0.1 - 17. 05. 2009
+  - Initial public release
