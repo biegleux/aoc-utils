@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Os -s
+CFLAGS=-Os -s -Wall
 TARGET=recextract
 
 all: $(TARGET)
